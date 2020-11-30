@@ -4,7 +4,7 @@
    
    Mysql组成分为两大部分，一部分是`Server`端，一部分是引擎端，Server端中主要包括了**连接器、分析器、优化器、执行器**，在Server端中还有一个查询缓存，以语句为key，查询结果为value，针对配置类库可以打开此选项，引擎端就是我们常说的innodb,myIsam。
    
-   ![](C:\Users\38492\Desktop\简历\images\2020-10-12-14-58-57-image.png)
+   ![](http://47.114.144.122/\images\2020-10-12-14-58-57-image.png)
    
    - 优化器
      
@@ -80,7 +80,7 @@
 
 3. redo log 双段提交
    
-   ![](C:\Users\38492\Desktop\简历\images\2020-10-12-15-54-07-image.png)
+   ![](http://47.114.144.122/images\2020-10-12-15-54-07-image.png)
 
 # 事务
 
@@ -106,7 +106,7 @@
    
    在mysql5.1之前，binlog是不支持row形式的，只支持statement形式，在RC隔离级别下statement形式的binlog会导致主从不一致的问题。如下图
    
-   ![](C:\Users\38492\Desktop\简历\images\2020-10-12-16-23-22-image.png)
+   ![](http://47.114.144.122/images\2020-10-12-16-23-22-image.png)
    
    在master中，最后的结果是存在3这条记录的，也就是先删后加的，但是在statement中是先加后删的，因此，他是不存在这条增加的记录的。
    
@@ -242,7 +242,7 @@
    
    流程图
    
-   ![](C:\Users\38492\Desktop\简历\images\2020-10-21-19-20-09-image.png)
+   ![](http://47.114.144.122/images\2020-10-21-19-20-09-image.png)
    
    mysql的binlog的同步是异步的，因此master是否需要等待丛库同步，分为两种同步方式：
    
